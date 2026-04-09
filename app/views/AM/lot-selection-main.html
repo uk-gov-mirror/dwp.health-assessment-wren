@@ -1,0 +1,81 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <form id="select-Lot" class="form" action="main-menu9.html">
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Select provider lot 
+          </h1>
+        </legend>
+        <p>
+          Select the provider lot you want to view
+        </p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot" name="Lot" type="radio" value="england" checked>
+                <label class="govuk-label govuk-radios__label" for="Lot">
+                  Lot 100
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot-2" name="Lot" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="Lot-2">
+                  Lot 1
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot-3" name="Lot" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="Lot-3">
+                  Lot 2
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot-4" name="Lot" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="Lot-4">
+                  Lot 3
+                </label>
+              </div>
+                            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot-4" name="Lot" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="Lot-4">
+                  Lot 4
+                </label>
+              </div>
+                            <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="Lot-4" name="Lot" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="Lot-4">
+                  Lot 5
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </fieldset>
+    </div>
+
+
+<button type="submit" class="govuk-button" data-module="govuk-button" id="filter">
+Continue
+</button>
+
+    </form>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+{% endblock %}

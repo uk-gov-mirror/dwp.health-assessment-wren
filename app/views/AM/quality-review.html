@@ -1,0 +1,386 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "main-menu8"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">
+Quality review settings
+</h1>
+
+<div class="govuk-width-container ">
+
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-three-quarters">
+
+  <h2 class="govuk-heading-l">
+Appointment skills
+</h2>
+<dl class="govuk-summary-list">
+
+<h3 class="govuk-heading-m">
+PIP face to face
+</h3>
+  <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="pip-f2f-approval.html">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="pip-f2f-post-approval.html">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="pip-f2f-rolling.html">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="pip-f2f-targeted.html">Change </a>
+  </dd>
+</dl>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+PIP telephone
+</h2>
+   <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+</dl>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+PIP video
+</h2>
+  <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+</dl>
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
+
+  <h2 class="govuk-heading-l">
+Further clinical skills
+</h2>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+PIP PBR
+</h2>
+  <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+</dl>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+PIP SREL
+</h2>
+  <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+</dl>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+PIP HCP review
+</h2>
+  <div class="govuk-summary-list__row">
+    <!-- <dt class="govuk-summary-list__key">
+     Approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+      100%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd> -->
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Post approval
+    </dt>
+    <dd class="govuk-summary-list__value">
+     25%
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Rolling
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Once every three months
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Targeted support
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      100%
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+</dl>
+</div>
+
+<div class="govuk-grid-column-one-quarter">     
+
+  <div class="app-related-items" role="complementary">
+  
+  <div class="has-action-list">
+  <h2 class="govuk-heading-m" id="subsection-title">
+  What you can do next
+  </h2>
+  <nav aria-labelledby="subsection-title">
+  <ul class="govuk-list">
+  
+    <!-- <li>
+      
+        <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Complete profile (add skills)</a>
+      
+      
+            </li> -->
+          
+        <li>
+      
+                <a href="preset-levels.html" class="govuk-link govuk-link--no-visited-state">View preset levels</a>        
+        
+              </li>
+       
+        </ul>
+      </nav>
+    </div>
+
+</div>
+</div>
+
+
+{% endblock %}

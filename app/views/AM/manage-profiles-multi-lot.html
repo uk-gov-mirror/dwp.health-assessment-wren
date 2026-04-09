@@ -8,14 +8,14 @@
 {% block beforeContent %}
 {{ govukBackLink({
   text: "Back",
-  href: "main-menu5.html"
+  href: "main-menu9.html"
 }) }}
 {% endblock %}
 
 
 {% block content %}
 
-  <h1 class="govuk-heading-l">Manage profiles</h1>
+  <h1 class="govuk-heading-l">Completed profiles</h1>
 
 <div class="govuk-form-group govuk-!-margin-bottom-0">
 <label class="govuk-label" for="searchNino">
@@ -35,7 +35,26 @@ Enter name
 </div>
 
 </div>
-  
+      <!-- <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Provider lot selected
+    </dt>
+    <dd class="govuk-summary-list__value">
+      <strong class="govuk-tag" >
+        Lot 100
+      </strong>
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">Change Lot<span class="govuk-visually-hidden"> name</span></a>
+    </dd>
+  </div>
+</dl>
+</div>
+</div>
+<div class="govuk-!-padding-bottom-5"></div> -->
     <table class="govuk-table">
       <caption class="govuk-visually-hidden">Manage profiles</caption>
       <thead class="govuk-table__head">
@@ -78,7 +97,7 @@ Enter name
           <td class="govuk-table__cell"> <p><a href="" class="govuk-link">Jill Mcclough</a></p> </td>
           <td class="govuk-table__cell">jill.mcclough@dwp.gov.uk</td>
           <td class="govuk-table__cell">Yes</td>
-          <td class="govuk-table__cell"><strong class="govuk-tag" >Lot 100</strong></td>
+          <td class="govuk-table__cell"><strong class="govuk-tag" >Lot 1</strong></td>
           <!-- <td class="govuk-table__cell">No</td>
           <td class="govuk-table__cell"> <p><a href="view-alert" class="govuk-link">View alert</a></p> </td> -->
         </tr>
@@ -99,13 +118,13 @@ Enter name
         </li>
         <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li>
     
-        <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=2" aria-label="Page 1 of 30">2</a></li>
+        <!-- <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=2" aria-label="Page 1 of 30">2</a></li> -->
           
         <li class="moj-pagination__item  moj-pagination__item--next">
-          <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> page</span></a>
+          <!-- <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> page</span></a> -->
         </li>
       </ul>
-      <p class="moj-pagination__results">Showing <b>1</b> to <b>4</b> of <b>4 profiles</b></p>
+      <p class="moj-pagination__results">Showing <b>1</b> to <b>5</b> of <b>5 profiles</b></p>
     </nav>
 
 </div>

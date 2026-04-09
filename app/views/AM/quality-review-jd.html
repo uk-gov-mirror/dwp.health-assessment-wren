@@ -1,0 +1,189 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container ">
+
+<div class="govuk-grid-row">
+
+<div class="govuk-grid-column-three-quarters">
+
+<h1 class="govuk-heading-l">
+Jane Doe's profile
+</h1>
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     Email
+    </dt>
+    <dd class="govuk-summary-list__value">
+      jane.doe@dwp.gov.uk
+    </dd>
+    <dd class="govuk-summary-list__actions">
+  </dd>
+  </div>
+  <!-- <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Provider lot
+    </dt>
+    <dd class="govuk-summary-list__value">
+     Lot 100
+    </dd>
+    <dd class="govuk-summary-list__actions">
+  </dd>
+  </div> -->
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Healthcare professional
+    </dt>
+    <dd class="govuk-summary-list__value">
+     Yes
+    </dd>
+    <dd class="govuk-summary-list__actions">
+   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      Office location
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Handsworth
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <!-- <a class="govuk-link" href="agent-hub-location">Change </a> -->
+  </dd>
+
+
+  </div>
+
+
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+    Appointment skills
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li style="white-space:nowrap;">PIP face to face </li>
+        <li style="white-space:nowrap;">  PIP telephone</li> 
+        <li style="white-space:nowrap;">  PIP video</li> 
+        
+      </ul>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="available-for-jd.html">Change </a>
+    </dd>
+      </div>
+      
+ <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+    Further clinical skills
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li style="white-space:nowrap;">PIP paper based review </li>
+        <li style="white-space:nowrap;">  PIP HCP review </li> 
+        
+      </ul>
+      </dd>
+      <dd class="govuk-summary-list__actions">
+        <a class="govuk-link" href="available-for-jd-fc.html">Change </a>
+    </dd>
+      
+  </dl>
+<dl class="govuk-summary-list">
+<h2 class="govuk-heading-m">
+Quality review level
+</h2>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+     PIP face to face
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Targeted support 
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="pip-f2f-change2.html">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      PIP telephone
+    </dt>
+    <dd class="govuk-summary-list__value">
+     Post approval 
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>   
+  </dd>
+  </div>
+
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      PIP video
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Post approval 
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      PIP paper based review
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+      Rolling 
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+    <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+      PIP HCP review
+    </dt>
+    <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+     Targeted support 
+    </dd>
+
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="">Change </a>
+  </dd>
+  </div>
+  
+</dl>
+  
+  
+  </div>
+  
+
+
+</div>
+
+</div>
+
+{% endblock %}
