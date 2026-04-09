@@ -1,0 +1,111 @@
+{% extends "layouts/main-am.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "profiles.html"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">Incomplete profiles (3)</h1>
+
+<div class="govuk-form-group govuk-!-margin-bottom-0">
+<label class="govuk-label" for="searchNino">
+Enter name
+</label>
+
+
+<div class="govuk-input__wrapper govuk-!-margin-bottom-0">
+
+
+<input class="govuk-input govuk-input--width-20 govuk-!-margin-right-1" id="searchNino" name="search" type="text" autocomplete="off">
+
+    <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" id="nino-search-button" data-govuk-button-init="">
+  Search
+</button>
+
+</div>
+
+</div>
+  
+    <table class="govuk-table">
+      <caption class="govuk-visually-hidden">Manage profiles</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Name</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Email</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Healthcare professional</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Date added</th>
+          <!-- <th scope="col" class="govuk-table__header app-custom-class">End of life</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Action</th> -->
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+       
+        <tr class="govuk-table__row" data-category="lot1">
+          <td class="govuk-table__cell"> <p><a href="" class="govuk-link">Jane Doe</a></p> </td>
+          <td class="govuk-table__cell">jane.doe@dwp.gov.uk</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell">21/12/2025</td>
+
+          <!-- <td class="govuk-table__cell">Lot 100</td> -->
+          <!-- <td class="govuk-table__cell">No</td>
+          <td class="govuk-table__cell"> <p><a href="view-alert" class="govuk-link">View alert</a></p> </td> -->
+        </tr>
+        <tr class="govuk-table__row" data-category="lot1">
+          <td class="govuk-table__cell"> <p><a href="" class="govuk-link">Barry Wise</a></p> </td>
+          <td class="govuk-table__cell">barry.wise@dwp.gov.uk</td>
+          <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">21/12/2025</td>
+
+          <!-- <td class="govuk-table__cell">Lot 100</td> -->
+          <!-- <td class="govuk-table__cell">No</td>
+          <td class="govuk-table__cell"> <p><a href="view-alert" class="govuk-link">View alert</a></p> </td> -->
+        </tr>
+        <tr class="govuk-table__row" data-category="lot4">
+          <td class="govuk-table__cell"> <p><a href="" class="govuk-link">John Roberts</a></p> </td>
+          <td class="govuk-table__cell">john.roberts@dwp.gov.uk</td>
+          <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">26/12/2025</td>
+
+          <!-- <td class="govuk-table__cell">Lot 100</td> -->
+          <!-- <td class="govuk-table__cell">No</td>
+          <td class="govuk-table__cell"> <p><a href="view-alert" class="govuk-link">View alert</a></p> </td> -->
+        </tr>
+
+      </tbody>
+    </table>
+    <nav class="moj-pagination" aria-label="Pagination navigation">
+
+      <ul class="moj-pagination__list">
+     
+        </li>
+        <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li>
+    
+        <!-- <li class="moj-pagination__item"><a class="moj-pagination__link" href="/page=2" aria-label="Page 1 of 30">2</a></li> -->
+          
+        <!-- <li class="moj-pagination__item  moj-pagination__item--next">
+          <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> page</span></a>
+        </li> -->
+      </ul>
+      <p class="moj-pagination__results">Showing <b>1</b> to <b>3</b> of <b>3 profiles</b></p>
+    </nav>
+
+</div>
+        <div class="moj-pagination" aria-label="Pagination navigation">
+    
+          </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

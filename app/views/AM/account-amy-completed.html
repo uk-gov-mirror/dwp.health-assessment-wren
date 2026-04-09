@@ -4,32 +4,20 @@
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 {% block beforeContent %}
-  <!-- {{ govukBackLink({
+  {{ govukBackLink({
   text: "Back",
   href: "javascript:window.history.back()"
-}) }} -->
+}) }}
 {% endblock %}
 
 {% block content %}
 <div class="govuk-width-container ">
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-    </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-    <h3 class="govuk-notification-banner__heading">
-      Jane Doe's profile has been updated
-    </h3>
-    </div>
-    </div>
 <div class="govuk-grid-row">
 
 <div class="govuk-grid-column-three-quarters">
   
 <h1 class="govuk-heading-l">
-Jane Doe's profile
+Amy Gill's profile
 </h1>
 
 <dl class="govuk-summary-list">
@@ -39,7 +27,7 @@ Jane Doe's profile
      Email
     </dt>
     <dd class="govuk-summary-list__value">
-      jane.doe@dwp.gov.uk
+      amy.gill@dwp.gov.uk
     </dd>
     <dd class="govuk-summary-list__actions">
   </dd>
@@ -56,13 +44,13 @@ Jane Doe's profile
   </div> -->
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-      Healthcare professional
+     Healthcare professional
     </dt>
     <dd class="govuk-summary-list__value">
      Yes
     </dd>
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="">Change </a> -->
+      <a class="govuk-link" href="question-hcp3.html">Change </a>
 
   </dd>
   
@@ -71,14 +59,16 @@ Jane Doe's profile
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-   Office location
+      Office location
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
-      Handsworth
+     Handsworth
     </dd>
 
     <dd class="govuk-summary-list__actions">
       <!-- <a class="govuk-link" href="location.html">Add </a> -->
+               <a class="govuk-link" href="location2.html">Change</a>
+
   </dd>
 
 
@@ -93,16 +83,16 @@ Jane Doe's profile
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
 
-      <ul class="govuk-list govuk-list--bullet">
-        <!-- <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li> -->
-        <!-- <li style="white-space:nowrap;">  PIP telephone assessment (PIP TA)</li>  -->
+      <!-- <ul class="govuk-list govuk-list--bullet">
+        <li style="white-space:nowrap;">PIP face to face </li>
+        <li style="white-space:nowrap;">  PIP telephone </li> 
         
-      </ul>
+      </ul> -->
       </dd>
       <dd class="govuk-summary-list__actions">
         <a class="govuk-link" href="">Add</a>
     </dd>
-    </div>
+      </div>
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
 
 
@@ -120,26 +110,26 @@ Jane Doe's profile
   
     <!-- <li>
       
-        <a href="available-for.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add skills</a>
+        <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Complete profile (add skills)</a>
       
       
             </li> -->
-                 
-        <!-- <li>
-      
-          <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage appointments</a>
-        
-        
-              </li>    -->
+          
         <li>
       
-          <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage other profiles</a>
+          <a href="manage-profiles-complete.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage other profiles</a>
         
         
               </li>
               <li>
       
-                <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>
+                <a href="main-menu.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>
+              
+              
+                    </li>
+                                  <li>
+      
+                <a href="remove-confirmation.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Remove profile</a>
               
               
                     </li>
@@ -147,11 +137,7 @@ Jane Doe's profile
         </ul>
       </nav>
     </div>
-  
-  </div>
-  
-  
-            </div>
+
 </div>
 
 {% endblock %}

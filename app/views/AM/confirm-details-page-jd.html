@@ -1,0 +1,208 @@
+{% extends "layouts/main.html" %}
+
+
+
+{% block pageTitle %}
+Add HCP to Handsworth - GOV.UK prototype
+{% endblock %}
+
+{% block header %}
+
+
+{% include "includes/internal-header.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+   
+
+
+      <form class="form" action="account-jd-confirmed" method="post">
+       
+        
+
+            <h1 class="govuk-heading-l">
+Are you sure Jane Doe's updated details are correct?        </h1>
+
+<!-- <div id="contact-hint" class="govuk-hint">
+  You will not be able to change these details after you save them.</div>
+        <br> -->
+        <!-- <div class="govuk-form-group">
+        <label class="govuk-fieldset__legend--s govuk-!-font-weight-bold" for="HCP-name">
+          Name
+        </label>
+        <p class="govuk-hint"></p>
+
+        <input class="govuk-input govuk-!-width-two-thirds" id="HCP-name" name="HCP-name" type="text" value="Amy Gill"></div>
+
+      
+         -->
+<!--         
+  <div class="govuk-form-group">
+          <label class="govuk-fieldset__legend--s govuk-!-font-weight-bold" for="HCP-name">
+          Email
+          </label>
+          <p class="govuk-hint"></p>
+  
+          <input class="govuk-input govuk-!-width-two-thirds" id="HCP-name" name="HCP-name" type="text" value="amygill@domain.gov.uk"></div>
+       
+          
+        -->
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+        <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden"> -->
+        <div class="govuk-grid-column-one-half" style="padding-left:0px;">
+          <!-- <h2 class="govuk-heading-m">
+            What are they available for?
+          </h1> -->
+
+ 
+
+
+        <!-- 
+<br>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+  
+              {{ govukCheckboxes({
+                idPrefix: " ",
+                name: "Work location",
+                classes: "govuk-checkboxes--small",
+                fieldset: {
+                  legend: {
+                    text: "Work location",
+                    isPageHeading: true,
+                    classes: "govuk-fieldset__legend--m"
+                  }
+                },
+                items: [
+                  {
+                    value: "Birmingham, Handsworth",
+                    text: "Birmingham, Handsworth"
+                  },
+                  {
+                    value: "London, Tresco House",
+                    text: "London, Tresco House"
+                  }
+                ]
+              }) }}
+  
+            </div>
+            </fieldset>
+            </div> -->
+  
+ 
+            <div class="govuk-width-container ">
+
+              <div class="govuk-grid-row">
+              
+              <div class="govuk-grid-column-three-quarters">
+              
+       
+              
+              <dl class="govuk-summary-list">
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                   Healthcare professional
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    Yes
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="question-hcp2.html">Change </a>
+                </dd>
+                </div>          
+                <!-- <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                   Email
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                    amy.gill@dwp.gov.uk
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                </dd>
+                </div>
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                   LOT(s)
+                  </dt>
+                  <dd class="govuk-summary-list__value">
+                   LOT 100
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                </dd>
+                </div> -->
+                <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key">
+                  Office location                  </dt>
+                  <dd class="govuk-summary-list__value">
+                   Handsworth
+                  </dd>
+                  <dd class="govuk-summary-list__actions">
+                    <a class="govuk-link" href="question-location.html">Change </a>
+              
+                </dd>
+                
+                </div>
+              
+              
+                <!-- <div class="govuk-summary-list__row"> -->
+                  <!-- <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+                 Base location
+                  </dt> -->
+                  <!-- <dd class="govuk-summary-list__value" style="border-bottom:0px;"> -->
+                   <!-- Birmingham, Handsworth -->
+                  <!-- </dd> -->
+              
+                  <!-- <dd class="govuk-summary-list__actions"> -->
+                    <!-- <a class="govuk-link" href="">Change </a> -->
+                <!-- </dd> -->
+              
+              
+                <!-- </div> -->
+              
+              
+              
+              
+                <!-- <div class="govuk-summary-list__row">
+                  <dt class="govuk-summary-list__key" style="border-bottom:0px;">
+                  Available for
+                  </dt>
+                  <dd class="govuk-summary-list__value" style="border-bottom:0px;">
+               -->
+                    <!-- <ul class="govuk-list govuk-list--bullet">
+                      <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li>
+                      <li style="white-space:nowrap;">  PIP telephone assessment (PIP TA)</li> 
+                      
+                    </ul> -->
+                    <!-- </dd> -->
+                    <!-- <dd class="govuk-summary-list__actions"> -->
+                      <!-- <a class="govuk-link" href="">Change</a> -->
+                  <!-- </dd> -->
+                    <!-- </div> -->
+                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
+              <div>
+
+
+        <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">Yes, save details</button>  
+          <a class="govuk-link" href="manage-profiles.html">Return to manage profiles</a>
+        </div>
+    </form>
+    </div>
+    </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

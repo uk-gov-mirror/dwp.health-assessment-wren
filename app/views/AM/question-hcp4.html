@@ -1,47 +1,52 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-Home – {{serviceName}} – GOV.UK Prototype Kit
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
 {% endblock %}
 
 {% block content %}
 
 
 <div class="govuk-grid-row" style="margin-top: -40px;">
-  <div class="govuk-grid-column-two-thirds">
-    <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-column-full">
 
   <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
   
- 
+
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-        Where is Jane Doe's office location?
+        Is Jane Doe a healthcare professional?
       </h1>
     </legend>
     <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
-          Handsworth
+          Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland">
+        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" checked>
         <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          Tresco House
+          No
         </label>
       </div>
 
     </div>
   </fieldset>
 </div>
-
       <br><br>
+
       
-      <a href="confirm-details-page-jd.html"><button class="govuk-button" data-module="govuk-button">Confirm</button></a>
+      <a href="location.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
     </div>
   </div>
 

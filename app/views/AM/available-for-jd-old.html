@@ -23,7 +23,7 @@ Add HCP to Handsworth - GOV.UK prototype
    
 
 
-      <form class="form" action="additional-skills" method="post">
+      <form class="form" action="confirm-skills-deletion" method="post">
        
         
 
@@ -31,7 +31,7 @@ Add HCP to Handsworth - GOV.UK prototype
               What are Jane Doe's appointment skills?            </h1>
 
 
-      
+        <br>
         <!-- <div class="govuk-form-group">
         <label class="govuk-fieldset__legend--s govuk-!-font-weight-bold" for="HCP-name">
           Name
@@ -65,41 +65,32 @@ Add HCP to Handsworth - GOV.UK prototype
           <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
           <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-            <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-    </legend>
-    <div id="waste-hint" class="govuk-hint">
-      Select all that apply
-    </div>
-    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
-        <label class="govuk-label govuk-checkboxes__label" for="waste">
-          PIP face to face
-        </label>
-      </div>
-      <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked>
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          PIP telephone
-        </label>
-      </div>
-            <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked>
-        <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-          PIP video assessment
-        </label>
-      </div>
-      <!-- <div class="govuk-checkboxes__item">
-        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-          Farm or agricultural waste
-        </label>
-      </div> -->
-    </div>
-  </fieldset>
-</div>
+            {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+
+             {{ govukCheckboxes({
+              idPrefix: "PIP-skills",
+              name: "PIP-skills",
+              classes: "govuk-checkboxes--small",
+              fieldset: {
+                legend: {
+                  text: "Appointment",
+                  isPageHeading: false,
+                  classes: "govuk-fieldset__legend--s"
+                }
+              },
+              items: [
+                {
+                  value: "PIP Telephone",
+                  text: "PIP Telephone",
+                  checked: false
+                },
+                {
+                  value: "PIP F2F",
+                  text: "PIP Face to face",
+                  checked: false
+                }
+              ]
+            }) }}
 
           </div>
           </fieldset>

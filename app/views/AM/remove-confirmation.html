@@ -1,0 +1,85 @@
+{% extends "layouts/main.html" %}
+
+
+
+{% block pageTitle %}
+Add HCP to Handsworth - GOV.UK prototype
+{% endblock %}
+
+{% block header %}
+
+
+{% include "includes/internal-header.html" %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+    <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+   
+
+
+      <form class="form" action="manage-profiles-removed" method="post">
+       
+        
+
+            <h1 class="govuk-heading-l">
+Are you sure you want to remove Amy Gill's profile?       </h1>
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+Check that you have reassigned Amy Gill's appointments before removing their profile   </strong>
+</div>
+
+
+        <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+        <div class="govuk-grid-column-one-half" style="padding-left:0px;">
+     
+ 
+<div class="govuk-width-container ">
+
+<div class="govuk-grid-row">
+              
+<div class="govuk-grid-column-three-quarters">
+              
+       
+     <!-- <p class="govuk-body">You are adding:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <!-- <li>Telephone assessment (PIP TA)</li> -->
+  <!-- <li>PIP Telephone</li> -->
+<!-- </ul>
+          
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
+
+              <p class="govuk-body">You are removing:</p>
+<ul class="govuk-list govuk-list--bullet"> -->
+  <!-- <li>Telephone assessment (PIP TA)</li> -->
+  <!-- <li>PIP Face to face</li>
+</ul> -->
+
+            
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
+
+
+  <div class="govuk-button-group">
+
+
+          <!-- <button class="govuk-button" data-module="govuk-button"> -->
+            <button class="govuk-button govuk-button--warning" data-module="govuk-button">Yes, remove profile</button>  
+          <a class="govuk-link" href="">No, return to profile</a>
+        </div>
+        </div>
+    </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
